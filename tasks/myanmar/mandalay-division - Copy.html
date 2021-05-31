@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mandalay Division</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom/style.css">
+    <!-- JS -->
+    <script src="jquery/jquery.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="custom/myscript.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                  <img src="image/mandalay.png" alt="yangon" class="img-fluid mx-auto d-block">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                  <h4 class="text-center yangon" style="color:#00af87">Beautiful Places in Mandalay City</h4>
+            </div>
+        </div>
+        <!-- Maharmyatmuni -->
+        <div class="row yangon">
+            <div class="col-md-3">
+              <img src="image/mmn.jpg" alt="maharmyatmuni" class="img-fluid
+              mx-auto d-block myimg">
+              <div class="card-body">
+                  <h5 class="text-center">Maharmyatmuni Pagoda</h5>
+                  <p>4.7 ****** (3,038)</p>
+                  <p>Large gilded stupa with a visitor center</p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#maharmyatmuni_map" style="background-color:#00af87"> Map>> </button>
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#maharmyatmuni" style="background-color:#00af87"> Details>> </button>
+              </div>
+            </div>
+          <!-- -->
+          <!-- Mandalay Hill -->
+            <div class="col-md-3">
+              <img src="image/mh.jpg" alt="mandalay_hill" class="img-fluid
+              mx-auto d-block myimg">
+              <div class="card-body">
+                  <h5 class="text-center">Mandalay Hill</h5>
+                  <p>4.1 ****** (785)</p>
+                  <p>Golden Buddhist pagoda with status</p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#mhill_map" style="background-color:#00af87"> Map>> </button>
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#mhill" style="background-color:#00af87"> Details>> </button>
+              </div>
+            </div>
+            <!-- -->
+            <!-- Hlawg -->
+            <div class="col-md-3">
+              <img src="image/mp.jpg" alt="hlawg" class="img-fluid
+              mx-auto d-block myimg">
+              <div class="card-body">
+                  <h5 class="text-center">Mandalay Palace</h5>
+                  <p>4.7 ****** (3,038)</p>
+                  <p>Large gilded stupa with a visitor center</p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#hlawg_map" style="background-color:#00af87"> Map>> </button>
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#hlawg" style="background-color:#00af87"> Details>> </button>
+              </div>
+            </div>
+            <!-- -->
+            <!-- Bogyoke -->
+            <div class="col-md-3">
+              <img src="image/up.jpg" alt="bogyoke" class="img-fluid
+              mx-auto d-block myimg">
+              <div class="card-body">
+                  <h5 class="text-center">Amarapura</h5>
+                  <p>4.7 ****** (3,038)</p>
+                  <p>Market,shopping,and</p>
+              </div>
+              <div class="card-footer">
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#bogyoke_map" style="background-color:#00af87"> Map>> </button>
+                  <button class="btn d-inline text-white" data-toggle="modal" data-target="#bogyoke" style="background-color:#00af87"> Details>> </button>
+              </div>
+            </div>
+        </div>
+    </div>
+<!-- -->
+
+    <!--- Start Maharmyatmuni Modal -->
+    <div class="modal fade" id="mhill">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Maharmyatmuni History</h4>
+                    <button close="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>The Maha Myat Muni Pagoda, also known as the Mahamuni
+                      Pagoda, is the holiest pilgrimage site in Mandalay.
+                      This pagoda houses the Maha Myat Muni Pagoda Buddha
+                      image, the most ancient and most revered of all Buddha
+                      images. The pagoda was built by King Bodawpaya, who took
+                      the Buddha image during his invasion of Rakhaing.Opening
+                      Hours: 06:00-20:00 Location: Southwest of Mandalay, three
+                      kilometres south of the city centre on the road towards
+                      Amarapura.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" name="button" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- End Maharmyatmuni Modal -->
+
+    <!--Start Maharmyatmuni Map -->
+    <div class="modal fade" id="mhill_map">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5531187.136722982!2d93.50218561298335!3d19.803681703146854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d45e2bd2733%3A0x71de89ac3b0f096c!2sMahar+Muni+Pagoda+Mandalay!5e0!3m2!1sen!2smm!4v1547648269594" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--End Maharmyatmuni Map -->
+
+    <!--- Start Mandalay Hill Modal -->
+    <div class="modal fade" id="mhill">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Mandalay History</h4>
+                    <button close="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>Almost everyone who visits Mandalay goes to this hill.
+                      It is the landmark of Mandalay and also serves as a
+                      natural watchtower because it overlooks the city.
+                      Visitors often watch the sunrise or sunset over the
+                      city plains here because of the stunning views.
+                      According to legend, the Lord Buddha visited the hill
+                      and made a prophecy that a great city would be
+                      established at its foot.Location: Northeast corner of the Mandalay Royal Palace.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" name="button" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- End Mandalay Hill Modal -->
+
+    <!--Start Mandalay Hill Map -->
+    <div class="modal fade" id="mhill_map">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14795.892901360778!2d96.09975652684835!3d22.01233686115436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6c8991d09045%3A0xaf49d09e149df666!2sMandalay+Hill!5e0!3m2!1sen!2smm!4v1547648614087" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--End Mandalay Hill Map -->
+
+    <!--- Start Hlawg Modal -->
+    <div class="modal fade" id="hlawg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Mandalay Palace History</h4>
+                    <button close="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <p>Hlawga National Park is a national park located in Mingaladon,
+                      Yangon Division, Myanmar, 22 miles (35 km) north of Yangon.
+                      The 1540-acre (623-hectare) park includes an 818-acre (313 hectare)
+                      wildlife park, a 62-acre (25-hectare) mini-zoo and a 660-acre
+                      (267-hectare) buffer zone.[1]
+                      First established as an environmental education center in 1982,
+                      the national park is a popular day-trip destination with Yangonites
+                      and ecotourists.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" name="button" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- End Sule Modal -->
+
+    <!--Start Hlawg Map -->
+    <div class="modal fade" id="hlawg_map">
+        <div class="modal-dialog">
+            <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15259.986994993926!2d96.10335585604173!3d17.023829557425437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c199d2bf542d63%3A0x35abc313cc6855ca!2sHlawga+National+Park!5e0!3m2!1sen!2smm!4v1547631255969" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!--End Hlawg Map -->
+
+    <!--- Start Bogyoke Modal -->
+    <div class="modal fade" id="bogyoke">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                        <h4 class="modal-title">Bogyoke History</h4>
+                        <button close="close" data-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                      <p>Bogyoke Aung San Market formerly Scott's Market) is a major bazaar
+                        located in Pabedan township in central Yangon, Myanmar. Known for its
+                        colonial architecture and inner cobblestone streets, the market is a
+                        major tourist destination, dominated by antique, Burmese handicraft and
+                        jewellery shops, art galleries, and clothing stores. Bogyoke Market is
+                        a popular black market location to exchange currency. The market also
+                        has a number of stores for local shoppers, selling medicine, foodstuffs,
+                         garments and foreign goods.
+                      </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" name="button" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+      </div>
+    </div>
+  <!--- End Bogyoke Modal -->
+  <!--Start Bogyoke Map -->
+  <div class="modal fade" id="bogyoke_map">
+      <div class="modal-dialog">
+          <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3819.9210571086164!2d96.15378181469424!3d16.78060272443791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1ec83c9555555%3A0xcf25a230cefc8985!2sBogyoke+Aung+San+Market!5e0!3m2!1sen!2smm!4v1547629752289" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+  </div>
+  <!--End Bogyoke Map -->
+
+</body>
+</html>
