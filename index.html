@@ -362,7 +362,7 @@
   /* ── CONTACT ── */
   .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     gap: 12px;
   }
 
@@ -381,6 +381,120 @@
   .contact-item:hover { border-color: var(--accent); transform: translateY(-2px); }
   .contact-label { font-size: 11px; color: var(--muted); font-family: 'DM Mono', monospace; display: block; }
   .contact-value { font-size: 13px; color: var(--text); display: block; margin-top: 2px; }
+
+  /* ── PROJECTS ── */
+  .project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    transition: all 0.25s;
+    animation: fadeUp 0.5s ease both;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(56,189,248,0.08);
+  }
+
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+
+  .project-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .project-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent3);
+    border: 1px solid rgba(52,211,153,0.3);
+    padding: 4px 10px;
+    border-radius: 99px;
+    white-space: nowrap;
+  }
+
+  .project-live::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent3);
+    animation: pulse 2s infinite;
+  }
+
+  .project-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+
+  .project-desc {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.7;
+    margin-bottom: 18px;
+  }
+
+  .project-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+
+  .feature-tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 99px;
+    background: rgba(56,189,248,0.08);
+    border: 1px solid rgba(56,189,248,0.2);
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+
+  .stack-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(129,140,248,0.08);
+    border: 1px solid rgba(129,140,248,0.15);
+    color: #a5b4fc;
+    font-family: 'DM Mono', monospace;
+  }
 
   /* ── FOOTER ── */
   footer {
@@ -403,7 +517,7 @@
     .exp-item { grid-template-columns: 1fr; gap: 8px; }
     .exp-meta { display: flex; gap: 12px; align-items: center; }
     .hero-name { letter-spacing: -1px; }
-    .contact-grid { grid-template-columns: 1fr 1fr; }
+    /* .contact-grid { grid-template-columns: 1fr 1fr; } */
   }
 </style>
 </head>
@@ -582,6 +696,37 @@
       </div>
       <div class="edu-year">2013 – 2018</div>
     </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="section-label">Outsource Projects</div>
+
+    <div class="project-card">
+      <div class="project-header">
+        <div class="project-name">HappySim</div>
+        <div class="project-live">Live — 3+ years in production</div>
+      </div>
+      <div class="project-type">// Freelance · Web Application · SIM Card Business</div>
+      <p class="project-desc">
+        A full-featured internal management system built for a SIM card sales office. Handles the complete business workflow — from customer registration and order processing to user access control. Used daily in real operations for over 3 years, proving its reliability and stability in a production environment.
+      </p>
+      <div class="project-features">
+        <span class="feature-tag">Customer Management</span>
+        <span class="feature-tag">Order Management</span>
+        <span class="feature-tag">User Permissions</span>
+        <span class="feature-tag">Role-based Access Control</span>
+        <span class="feature-tag">SIM Card Sales Workflow</span>
+      </div>
+      <div class="project-stack">
+        <span class="stack-tag">PHP</span>
+        <span class="stack-tag">Laravel</span>
+        <span class="stack-tag">MySQL</span>
+        <span class="stack-tag">Bootstrap</span>
+        <span class="stack-tag">jQuery</span>
+      </div>
+    </div>
+
   </section>
 
   <!-- AWARDS -->
